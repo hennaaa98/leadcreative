@@ -5,9 +5,9 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 function App() {
   const { unityProvider, loadingProgression, isLoaded } = useUnityContext({
     loaderUrl: "build/build.loader.js",
-    dataUrl: "build/build.data",
-    frameworkUrl: "build/build.framework.js",
-    codeUrl: "build/build.wasm",
+    dataUrl: "build/build.data.unityweb",
+    frameworkUrl: "build/build.framework.js.unityweb",
+    codeUrl: "build/build.wasm.unityweb",
   });
 
   return (
